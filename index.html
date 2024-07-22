@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sudoku_N-Queens</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0;
+      background-image: url('background3.jpg'); /* Add background image */
+      background-size: cover;
+      background-position: center;
+      transition: background-image 0.5s;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-around;
+      width: 80%;
+    }
+
+    .box {
+      width: 45%;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.3s ease-in-out, background-color 0.3s; /* Add background-color transition */
+    }
+
+    .box:hover {
+      transform: translateY(-5px);
+      background-color: hsl(204, 19%, 84%); /* Change background color on hover */
+    }
+
+    .box h2 {
+      margin-top: 0;
+      color: #333;
+    }
+
+    .box a {
+      display: block;
+      text-decoration: none;
+      color: #333;
+      padding: 10px;
+      border: 1px solid rgb(236, 199, 199);
+      border-radius: 5px;
+      margin-top: 20px;
+      text-align: center;
+      transition: background-color 0.3s;
+    }
+
+    .box a:hover {
+      background-color: hwb(13 55% 12%);
+      transition: background-color 0.3s;
+    }
+
+    .game-image {
+      margin-top: 20px;
+      width: 100%;
+      max-width: 300px; /* Adjust the max-width as needed */
+      height: auto;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="box">
+    <h2>Sudoku Solver</h2>
+    <img src="sudoku2.jpg" alt="Sudoku Image" class="game-image" style="height: 300px;">
+    <a href="index_sudoku.html"><b>Play Sudoku</b></a>
+  </div>
+
+  <div class="box">
+    <h2>N-Queens Visualizer</h2>
+    <img src="n_queens.jpg" alt="N-Queens Image" class="game-image">
+    <a href="index_nqueens.html"><b>Play N-Queens</b></a>
+  </div>
+</div>
+
+</body>
+</html>
